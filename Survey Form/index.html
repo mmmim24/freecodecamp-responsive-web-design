@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"></meta>
+  <title>https://survey-form.freecodecamp.rocks/</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <h1 id="title">freeCodeCamp Survey Form</h1>
+ <p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+  <label id="name-label" for="name">Name:
+    <input id="name" type="text" placeholder="Enter your name" required/>
+  </label>
+  <label id="email-label" for="email">Email:
+    <input id="email" type="email" placeholder="Enter your email" required/>
+  </label>
+  <label id="number-label" for="number">Age(optional):
+    <input id="number" type="number" placeholder="Age" min="10" max="99" required/>
+  </label>
+  <label><input name="choice" type="radio" value="Male" required/>Male</label>
+  <label><input name="choice" type="radio" value="Female"/>Female</label>
+  <label>Choose any
+  <select id="dropdown">
+    <option>One</option>
+    <option>Two</option>
+    <option>Three</option>
+  </select>
+  </label>
+
+  <label>What would you like to see improved? (Check all that apply)
+    <label>
+    <input type = "checkbox" value="audio"/>Audio</label>
+    <label>
+    <input type = "checkbox" value="video"/>Video</label>
+    <label>
+    <input type = "checkbox" value="text"/>Text</label>
+    <label>
+    <input type = "checkbox" value="image"/>Image</label>
+  </label>
+
+  <label>Any Suggestions?
+    <textarea rows="5" cols="30">I want to increase the video quality...</textarea>
+  </label>
+  <input id="submit" type="submit"/>
+</form>
+</body>
+</html>
