@@ -1,0 +1,50 @@
+*{
+    font-family: sans-serif;
+  }
+  html{
+    box-sizing:border-content;
+  }
+  body{
+    display:flex;
+  }
+  #dir{
+      display:flex;
+      flex-direction: column;
+      border: 2px solid black;
+    }
+  .nav-link{
+    padding: 10px 30px;
+    border-top: 1px solid black;
+  }
+    header{
+      font-size: 2rem;
+    }
+    nav header{
+      text-align:center;
+      display: block;
+      margin: 1rem 0;
+    }
+  
+    #navbar{
+      height: 500%;
+      width: 480px;
+      display:flex;
+      flex-direction: column;
+      border-right: 2px solid black;
+    }
+  
+  @media only screen and (max-width:840px){
+    #navbar{
+      float: left;
+      height: 500%;
+      border-right: 2px solid black;
+    }
+    #dir{
+      display:flex;
+      flex-direction: column;
+      border: 2px solid black;
+    }
+    body{
+      background-color: #cfcfcf;
+    }
+  }
