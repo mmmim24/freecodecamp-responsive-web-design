@@ -1,13 +1,20 @@
 body{
     margin: 0;
+    scroll-behavior: smooth;
+  }
+  #header-img{
+    width: 400px;
+    float: left;
   }
   .container{
     display: flex;
     position: relative;
-    flex-flow: column erap;
-    top: 64;
+    gap: 8rem;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 32px;
+    top: 64px;
     left: 0;
-    justify-content: center;
   }
   #email,#submit{
     display:block;
@@ -15,10 +22,13 @@ body{
   }
   #header {
     display:flex;
+    overflow:hidden;
     position: fixed;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 64px;
+    top: 0;
+    z-index: 1;
     width: 100%;
     background-color: #eaeaea;
   }
@@ -36,10 +46,129 @@ body{
     color: inherit;
   }
   
+  input[id="email"]{
+    padding: 4px;
+    border-radius: 16px solid black;
+    width: 200px;
+    text-align: center;
+  }
+  #features{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+  }
+
+  #video{
+    width: 600px;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  #pricing{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 32px;
+  }
   
-  @media (max-width:500px){
+  .card{
+    border: 1px solid black;
+    max-width: 260px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .card-head{
+    background-color: #eaeaea;
+    width: 100%;
+    height: 32px;
+    margin-top: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .price{
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .details{
+    margin: 1rem;
+    text-align: center;
+  }
+.btn{
+  background-color: #fedf00;
+  padding: 8px 16px;
+  border: none;
+  margin: 1rem 0;
+}
+  footer{
+    margin: 4rem 0;
+    text-align: right;
+    background-color: #eaeaea;
+    height: 6rem;
+    padding: 2rem 20rem;
+    margin-bottom: 0;
+  }
+  footer ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  footer ul li{
+    list-style: none;
+  }
+  footer ul li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: inherit;
+  }
+  
+  @media (max-width:930px){
+    #header-img{
+      width: 300px;
+    }
     #header{
+      height: auto;
+      flex-flow: column wrap;
+    }
+    #nav-bar ul{
+      flex-flow: column wrap;
+      gap: 1rem;
+    }
+    #features{
+      flex-direction: column;
+      text-align: center;
+    }
+    #video{
+      width: 400px;
+      height: auto;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+    #pricing{
       flex-flow:column wrap;
       align-items: center;
+    }
+    .card{
+      border: 1px solid black;
+      max-width: 360px;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+    .container{
+      top: 200px;
+    }
+    footer{
+      padding: 2rem 10rem;
+      position: relative;
+      top: 128px;
+      text-align: center;
+    }
+    footer ul{
+      padding: 0;
+      justify-content: center;
+      gap: 2rem;
     }
   }

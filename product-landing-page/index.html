@@ -8,7 +8,7 @@
   <body>
     <header id= "header">
       <div id="logo">
-        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img" alt="original-trombones-logo" width=200/>
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img" alt="original-trombones-logo"/>
       </div>
       <nav id="nav-bar">
         <ul>
@@ -26,29 +26,69 @@
       </nav>
     </header>
     <div class="container">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
         <h2>Handcrafted, home-made masterpieces</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input type="email" name="email" id="email" placeholder="Enter your email address" requird>
+        <input type="email" name="email" id="email" placeholder="Enter your email address" requird>
           <input class="btn" type="submit" id="submit" value="Get Started">
         </form>
     </div>
     <div class="container">
       <section id="features">
-Premium Materials
-Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+        <div>
+          <h3>
+            Premium Materials
 
-Fast Shipping
-We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
-
-Quality Assurance
-For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</section>
-      <section id="how-it-works">
-        <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" height="315" frameborder="0" allowfullscreen></iframe>
+          </h3>
+          Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+        </div>
+        <div>
+          <h3>Fast Shipping</h3>
+          We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+        </div>
+        <div>
+          <h3>Quality Assurance</h3>
+          For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+        </div>
       </section>
-      <section id="pricing"></section>
+
+      <section id="how-it-works">
+        <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </section>
+      
+      <section id="pricing">
+        <div class="card">
+          <p class="card-head">TENOR TROMBONE</p>
+          <p class="price">$600</p>
+          <p class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat a officiis exercitationem excepturi libero reiciendis voluptates enim porro autem nemo?</p>
+          <button class="btn">SELECT</button>
+        </div>
+        <div class="card">
+          <p class="card-head">TENOR TROMBONE</p>
+          <p class="price">$600</p>
+          <p class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat a officiis exercitationem excepturi libero reiciendis voluptates enim porro autem nemo?</p>
+          <button class="btn">SELECT</button>
+        </div>
+        <div class="card">
+          <p class="card-head">TENOR TROMBONE</p>
+          <p class="price">$600</p>
+          <p class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat a officiis exercitationem excepturi libero reiciendis voluptates enim porro autem nemo?</p>
+          <button class="btn">SELECT</button>
+        </div>
+      </section>
     </div>
     <footer>
-
+      <ul>
+        <li>
+          <a href="#privacy">Privacy</a>
+        </li>
+        <li>
+          <a href="#terms">Terms</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <p>Copyright 2016, Original Trombones</p>
     </footer>
   </body>
 </html>
