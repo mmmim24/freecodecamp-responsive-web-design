@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+  }
+  .container{
+    display: flex;
+    position: relative;
+    flex-flow: column erap;
+    top: 64;
+    left: 0;
+    justify-content: center;
+  }
+  #email,#submit{
+    display:block;
+    margin: 1em auto;
+  }
+  #header {
+    display:flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    background-color: #eaeaea;
+  }
+  
+  #nav-bar ul{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+  }
+  #nav-bar ul li{
+    list-style: none;
+  }
+  #nav-bar ul li a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  @media (max-width:500px){
+    #header{
+      flex-flow:column wrap;
+      align-items: center;
+    }
+  }
